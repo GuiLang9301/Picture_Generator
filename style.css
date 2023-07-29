@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar-transparent {
+    background-color: transparent !important;
+  }
+  
+  .navbar-transparent::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+  
+  .carousel {
+    position: relative;
+    z-index: 999;
+  }
+  
+  body {
+    background-color: black;
+    color: white;
+    font-family: "Poppins";
+  }
+  
+  #favorite {
+    font-size: 2rem;
+    color: orange;
+  }
+  
+  #trash {
+    font-size: 1.5rem;
+    color: orange;
+  }
+  
+  .favorite-img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  #favorites-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  #favorite-section {
+    border: 1px white solid;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    width: 310px;
+    height: 360px;
+  }
+  #fav-title {
+    font-size: 24px;
+  }
+  .delete {
+    display: flex;
+    justify-content: end;
+  }
+  .modal {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    background: rgba(0, 0, 0, 0.5);
+  
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .modal.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .modal-content {
+    object-fit: cover;
+    max-width: 500px;
+    max-height: 700px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
